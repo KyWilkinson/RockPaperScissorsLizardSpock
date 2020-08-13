@@ -31,11 +31,6 @@ namespace RPSLS
             Console.WriteLine("Welcome to Rock Paper Scissors Lizard Spock");
             Console.WriteLine("--------------------------------------------");
         }
-        public void DisplayRules()
-        {
-            Console.WriteLine("Would you like to play a game?");
-
-        }
         public void ChooseOpponent()
         {
 
