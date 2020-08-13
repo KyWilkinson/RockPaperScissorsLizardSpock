@@ -25,9 +25,13 @@ namespace RPSLS
             Welcome();
             DisplayRules();
             DetermineOpponent();
-            while(player1.score <3 && player2.score < 3)
-            player1.ChooseGesture();
-            player2.ChooseGesture();
+            if()
+            {
+                while(player1.score <3 && player2.score < 3)
+                player1.ChooseGesture();
+                player2.ChooseGesture();
+
+            }
         }
         public void Welcome()
         {
