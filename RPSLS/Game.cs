@@ -11,6 +11,7 @@ namespace RPSLS
         //member variables(HAS A)
         int playerOneScore;
         int playerTwoScore;
+        public bool choice;
         Random random;
         AI computer;
         Human human;
@@ -25,15 +26,17 @@ namespace RPSLS
         public void RunGame()
         {
             Welcome();
+            //ChooseOpponent();
         }
         public void Welcome()
         {
             Console.WriteLine("Welcome to Rock Paper Scissors Lizard Spock");
             Console.WriteLine("--------------------------------------------");
+            
         }
         public void ChooseOpponent()
         {
-
+         
         }
     }
 }

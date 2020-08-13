@@ -22,6 +22,10 @@ namespace RPSLS
             
         }
         //memeber methods(CAN DO)
+        public void DisplayChoices()
+        {
+
+        }
 
     }
 }
