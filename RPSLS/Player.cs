@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class Player
+    public abstract class Player
     {
         //member variables(HAS A)
 
@@ -16,5 +16,6 @@ namespace RPSLS
 
         }
         //memeber methods(CAN DO)
+
     }
 }
