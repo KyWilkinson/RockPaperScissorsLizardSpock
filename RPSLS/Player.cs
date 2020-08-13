@@ -6,14 +6,20 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    public abstract class Player
+    public class Player
     {
         //member variables(HAS A)
-
+        List<string> choice = new List<string>();
         //constructor(SPAWNER)
         public Player()
         {
-
+            choice.Add("Rock");
+            choice.Add("Paper");
+            choice.Add("Scissors");
+            choice.Add("Lizard");
+            choice.Add("Spock");
+            
+            
         }
         //memeber methods(CAN DO)
 

@@ -9,11 +9,13 @@ namespace RPSLS
     class Human : Player
     {
         //member variables(HAS A)
+        public string playerOne;
+        public string playerTwo;
+
 
         //constructor(SPAWNER)
         public Human()
         {
-            
         }
         //memeber methods(CAN DO)
     }

@@ -9,7 +9,7 @@ namespace RPSLS
     class AI : Player
     {
         //member variables(HAS A)
-
+        public string computerPlayer;
         //constructor(SPAWNER)
         public AI()
         {
