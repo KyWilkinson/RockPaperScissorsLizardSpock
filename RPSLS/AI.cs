@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class AI : Player
+    public class AI : Player
     {
         //member variables(HAS A)
         public string computerPlayer;

@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class Game
+    public class Game
     {
         //member variables(HAS A)
         int playerOneScore;
         int playerTwoScore;
         Random random;
+        AI computer;
+        Human human;
         //constructor(SPAWNER)
         public Game()
         {
@@ -20,5 +22,23 @@ namespace RPSLS
             random = new Random();
         }
         //memeber methods(CAN DO)
+        public void RunGame()
+        {
+            Welcome();
+        }
+        public void Welcome()
+        {
+            Console.WriteLine("Welcome to Rock Paper Scissors Lizard Spock");
+            Console.WriteLine("--------------------------------------------");
+        }
+        public void DisplayRules()
+        {
+            Console.WriteLine("Would you like to play a game?");
+
+        }
+        public void ChooseOpponent()
+        {
+
+        }
     }
 }

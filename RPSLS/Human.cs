@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class Human : Player
+    public class Human : Player
     {
         //member variables(HAS A)
         public string playerOne;
@@ -18,5 +18,6 @@ namespace RPSLS
         {
         }
         //memeber methods(CAN DO)
+
     }
 }
