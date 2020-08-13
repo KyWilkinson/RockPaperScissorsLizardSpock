@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class Player
+    class Human
     {
         //member variables(HAS A)
 

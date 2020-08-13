@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class Player
+    class Gestures
     {
         //member variables(HAS A)
 
