@@ -19,7 +19,7 @@ namespace RPSLS
             choice = new List<string>() { "Rock", "Paper", "Scissors", "Lizard", "Spock" };
         }
         //memeber methods(CAN DO)
-        public abstract void ChooseGesture();
+        public abstract void ChooseGesture();      
 
     }
 }

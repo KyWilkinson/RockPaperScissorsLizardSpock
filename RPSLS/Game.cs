@@ -25,6 +25,9 @@ namespace RPSLS
             Welcome();
             DisplayRules();
             DetermineOpponent();
+            while(player1.score <3 && player2.score < 3)
+            player1.ChooseGesture();
+            player2.ChooseGesture();
         }
         public void Welcome()
         {
@@ -38,35 +41,24 @@ namespace RPSLS
         }
         public void DetermineOpponent()
         {
-            Console.WriteLine("Do you want a 1 player game or 2 player game?");
+            Console.WriteLine("Do you want a 1 player game or 2 player game? Type 1 or 2");
             string response = Console.ReadLine();
             if(response == "1" )
+            {
+                player2 = new AI();
+            }
+            else if(response == "2")
             {
                 player2 = new Human();
             }
             else
             {
-                player2 = new AI();
+                DetermineOpponent();
             }
             Console.WriteLine("Let the game begin!");
         }
-        public void DisplayChoices()
+        public void CompareGestures()
         {
-            Console.WriteLine("--------------------------------------------------------");
-            Console.WriteLine("--------------------------------------------------------");
-            Console.WriteLine("--------------------------------------------------------");
-            Console.WriteLine("--------------------------------------------------------");
-            Console.WriteLine("--------------------------------------------------------");
-            Console.WriteLine("--------------------    (0) Rock      ------------------");
-            Console.WriteLine("--------------------     (1) Paper      ----------------");
-            Console.WriteLine("--------------------      (2) Scissors      ------------");
-            Console.WriteLine("--------------------     (3) Lizard      ---------------");
-            Console.WriteLine("--------------------    (4) Spock      -----------------");
-            Console.WriteLine("--------------------------------------------------------");
-            Console.WriteLine("--------------------------------------------------------");
-            Console.WriteLine("--------------------------------------------------------");
-            Console.WriteLine("--------------------------------------------------------");
-            Console.WriteLine("--------------------------------------------------------");
 
         }
     }

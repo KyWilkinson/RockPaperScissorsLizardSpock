@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,7 +21,11 @@ namespace RPSLS
         //memeber methods(CAN DO)
         public override void ChooseGesture()
         {
-            
+            foreach(string choice in choice)
+            {
+                Console.WriteLine("Select your choice: " + choice);
+
+            }
         }
     }
 }
