@@ -9,24 +9,23 @@ namespace RPSLS
     public class Game
     {
         //member variables(HAS A)
-        int playerOneScore;
-        int playerTwoScore;
-        public bool choice;
+
         Random random;
-        AI computer;
-        Human human;
+        public AI ;
+        public Human player1;
         //constructor(SPAWNER)
         public Game()
         {
-            playerOneScore = 0;
-            playerTwoScore = 0;
+            player1 = new Human();
+
             random = new Random();
         }
         //memeber methods(CAN DO)
         public void RunGame()
         {
             Welcome();
-            //ChooseOpponent();
+            DisplayRules();
+
         }
         public void Welcome()
         {
@@ -34,9 +33,45 @@ namespace RPSLS
             Console.WriteLine("--------------------------------------------");
             
         }
-        public void ChooseOpponent()
+        public void DisplayRules()
         {
-         
+            Console.WriteLine("This is a best of three game");
+        }
+        public void DetermineOpponent()
+        {
+            Console.WriteLine("Do you want a 1 player game or 2 player game?");
+            string response = Console.ReadLine()
+            if (response == "1" )
+            {
+                player2 = new Human();
+            }
+            else
+            {
+                player2 = new AI
+            }
+        }
+        public void CompareChoices()
+        {
+
+        }
+        public void DisplayChoices()
+        {
+            Console.WriteLine("--------------------------------------------------------");
+            Console.WriteLine("--------------------------------------------------------");
+            Console.WriteLine("--------------------------------------------------------");
+            Console.WriteLine("--------------------------------------------------------");
+            Console.WriteLine("--------------------------------------------------------");
+            Console.WriteLine("--------------------    (0) Rock      ------------------");
+            Console.WriteLine("--------------------     (1) Paper      ----------------");
+            Console.WriteLine("--------------------      (2) Scissors      ------------");
+            Console.WriteLine("--------------------     (3) Lizard      ---------------");
+            Console.WriteLine("--------------------    (4) Spock      -----------------");
+            Console.WriteLine("--------------------------------------------------------");
+            Console.WriteLine("--------------------------------------------------------");
+            Console.WriteLine("--------------------------------------------------------");
+            Console.WriteLine("--------------------------------------------------------");
+            Console.WriteLine("--------------------------------------------------------");
+
         }
     }
 }
