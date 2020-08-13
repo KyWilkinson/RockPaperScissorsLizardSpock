@@ -25,9 +25,9 @@ namespace RPSLS
             Welcome();
             DisplayRules();
             DetermineOpponent();
-            if()
+            if(player2 = Human)
             {
-                while(player1.score <3 && player2.score < 3)
+                while(player1.score <2 && player2.score < 2)
                 player1.ChooseGesture();
                 player2.ChooseGesture();
 
@@ -62,6 +62,14 @@ namespace RPSLS
             Console.WriteLine("Let the game begin!");
         }
         public void CompareGestures()
+        {
+
+        }
+        public void WinnerOfRound()
+        {
+
+        }
+        public void DisplayWinner()
         {
 
         }
