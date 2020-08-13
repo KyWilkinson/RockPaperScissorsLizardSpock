@@ -11,21 +11,20 @@ namespace RPSLS
         //member variables(HAS A)
 
         Random random;
-        public AI ;
-        public Human player1;
+        public Player player1;
+        public Player player2;
         //constructor(SPAWNER)
         public Game()
         {
-            player1 = new Human();
-
             random = new Random();
+            player1 = new Human();
         }
         //memeber methods(CAN DO)
         public void RunGame()
         {
             Welcome();
             DisplayRules();
-
+            DetermineOpponent();
         }
         public void Welcome()
         {
@@ -40,19 +39,16 @@ namespace RPSLS
         public void DetermineOpponent()
         {
             Console.WriteLine("Do you want a 1 player game or 2 player game?");
-            string response = Console.ReadLine()
-            if (response == "1" )
+            string response = Console.ReadLine();
+            if(response == "1" )
             {
                 player2 = new Human();
             }
             else
             {
-                player2 = new AI
+                player2 = new AI();
             }
-        }
-        public void CompareChoices()
-        {
-
+            Console.WriteLine("Let the game begin!");
         }
         public void DisplayChoices()
         {
