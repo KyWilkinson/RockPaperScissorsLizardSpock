@@ -11,7 +11,10 @@ namespace RPSLS
         //member variables(HAS A)
 
         //constructor(SPAWNER)
+        public Gestures()
+        {
 
+        }
         //memeber methods(CAN DO)
     }
 }
