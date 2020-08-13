@@ -9,7 +9,12 @@ namespace RPSLS
     class Gestures
     {
         //member variables(HAS A)
-
+        public string rock;
+        public string paper;
+        public string scissors;
+        public string lizard;
+        public string spock;
+        public List<Gestures> gestures;
         //constructor(SPAWNER)
         public Gestures()
         {
