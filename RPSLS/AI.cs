@@ -20,7 +20,7 @@ namespace RPSLS
         //memeber methods(CAN DO)
         public override void ChooseGesture()
         {
-            int number = rand.Next(5);
+            int number = rand.Next(4);
             gestureChoice = choice[number];
         }
     }
