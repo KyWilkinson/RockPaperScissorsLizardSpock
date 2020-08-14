@@ -11,6 +11,7 @@ namespace RPSLS
     {
         //member variables(HAS A)
         public string computerPlayer;
+        public Random rand;
         //constructor(SPAWNER)
         public AI()
         {
@@ -19,7 +20,8 @@ namespace RPSLS
         //memeber methods(CAN DO)
         public override void ChooseGesture()
         {
-
+            int number = rand.Next(5);
+            gestureChoice = choice[number];
         }
     }
 }
