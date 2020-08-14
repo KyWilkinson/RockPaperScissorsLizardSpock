@@ -19,7 +19,7 @@ namespace RPSLS
         //memeber methods(CAN DO)
         public override void ChooseGesture()
         {
-            
+
         }
     }
 }

@@ -21,13 +21,15 @@ namespace RPSLS
         //memeber methods(CAN DO)
         public override void ChooseGesture()
         {
-            string output = Console.ReadLine()
-            foreach(string choice in choice)
+            string userinput = 
+
+        }
+        public void DisplayChoice()
+        {
+            foreach (string choice in choice)
             {
                 Console.WriteLine("Select your choice: " + choice);
-                output = 
             }
-            
         }
     }
 }

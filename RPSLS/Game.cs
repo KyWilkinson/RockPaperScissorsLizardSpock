@@ -10,7 +10,7 @@ namespace RPSLS
     {
         //member variables(HAS A)
 
-        Random random;
+        public Random random;
         public Player player1;
         public Player player2;
         //constructor(SPAWNER)
@@ -28,8 +28,13 @@ namespace RPSLS
             if(player2 = Human)
             {
                 while(player1.score <3 && player2.score < 3)
-                player1.ChooseGesture();
-                player2.ChooseGesture();
+                {
+                    player1.ChooseGesture();
+                    player2.ChooseGesture();
+                    CompareGestures();
+                    WinnerOfRound();
+
+                }
 
             }
         }
