@@ -15,7 +15,7 @@ namespace RPSLS
         //constructor(SPAWNER)
         public AI()
         {
-
+            rand = new Random();
         }
         //memeber methods(CAN DO)
         public override void ChooseGesture()

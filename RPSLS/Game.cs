@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema;
 
 namespace RPSLS
 {
@@ -25,14 +26,14 @@ namespace RPSLS
             Welcome();
             DisplayRules();
             DetermineOpponent();
-            while (player1.score < 3 && player2.score < 3)
+            while (player1.score < 2 && player2.score < 2)
             {
 
 
                 player1.ChooseGesture();
                 player2.ChooseGesture();
                 CompareGestures();
-
+                
 
             }
             DisplayWinner();
