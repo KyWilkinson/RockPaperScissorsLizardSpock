@@ -21,7 +21,8 @@ namespace RPSLS
         //memeber methods(CAN DO)
         public override void ChooseGesture()
         {
-            string userinput = 
+            DisplayChoice();
+            gestureChoice = Console.ReadLine();
 
         }
         public void DisplayChoice()

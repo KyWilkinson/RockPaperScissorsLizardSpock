@@ -25,24 +25,22 @@ namespace RPSLS
             Welcome();
             DisplayRules();
             DetermineOpponent();
-            if(player2 = Human)
+            while (player1.score < 3 && player2.score < 3)
             {
-                while(player1.score <3 && player2.score < 3)
-                {
-                    player1.ChooseGesture();
-                    player2.ChooseGesture();
-                    CompareGestures();
-                    WinnerOfRound();
 
-                }
+                player1.ChooseGesture();
+                player2.ChooseGesture();
+                CompareGestures();
 
             }
+            DisplayWinner();
+
         }
         public void Welcome()
         {
             Console.WriteLine("Welcome to Rock Paper Scissors Lizard Spock");
             Console.WriteLine("--------------------------------------------");
-            
+
         }
         public void DisplayRules()
         {
@@ -52,11 +50,11 @@ namespace RPSLS
         {
             Console.WriteLine("Do you want a 1 player game or 2 player game? Type 1 or 2");
             string response = Console.ReadLine();
-            if(response == "1" )
+            if (response == "1")
             {
                 player2 = new AI();
             }
-            else if(response == "2")
+            else if (response == "2")
             {
                 player2 = new Human();
             }
@@ -70,10 +68,6 @@ namespace RPSLS
         {
 
         }
-        public void WinnerOfRound()
-        {
-
-        }
         public void DisplayWinner()
         {
             if (player1.score == 2)
@@ -81,12 +75,11 @@ namespace RPSLS
                 Console.WriteLine("Player 1 Wins.");
                 Console.WriteLine("--------------------------------");
             }
-            else if(player2.score == 2)
+            else if (player2.score == 2)
             {
                 Console.WriteLine("Player 2 Wins.");
                 Console.WriteLine("--------------------------------");
             }
-
         }
     }
 }
