@@ -32,6 +32,7 @@ namespace RPSLS
 
                 player1.ChooseGesture();
                 player2.ChooseGesture();
+                Console.Clear();
                 CompareGestures();
                 
 
@@ -48,6 +49,7 @@ namespace RPSLS
         public void DisplayRules()
         {
             Console.WriteLine("This is a best of three game");
+            Console.WriteLine("--------------------------------------------");
         }
         public void DetermineOpponent()
         {
@@ -223,12 +225,12 @@ namespace RPSLS
         {
             if (player1.score == 2)
             {
-                Console.WriteLine("Player 1 Wins.");
+                Console.WriteLine("Congratulations player 1 Wins.");
                 Console.WriteLine("--------------------------------");
             }
             else if (player2.score == 2)
             {
-                Console.WriteLine("Player 2 Wins.");
+                Console.WriteLine("Congratulations player 2 Wins.");
                 Console.WriteLine("--------------------------------");
             }
         }
