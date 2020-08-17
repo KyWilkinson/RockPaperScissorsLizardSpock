@@ -23,6 +23,31 @@ namespace RPSLS
         {
             DisplayChoice();
             gestureChoice = Console.ReadLine();
+            if(gestureChoice.ToUpper() == "ROCK" )
+            {
+                gestureChoice = "Rock";
+            }
+            else if(gestureChoice.ToUpper() == "SCISSORS")
+            {
+                gestureChoice = "Scissors";
+            }
+            else if(gestureChoice.ToUpper() == "PAPER")
+            {
+                gestureChoice = "Paper";
+            }
+            else if (gestureChoice.ToUpper() == "LIZARD")
+            {
+                gestureChoice = "Lizard";
+            }
+            else if (gestureChoice.ToUpper() == "SPOCK")
+            {
+                gestureChoice = "Spock";
+            }
+            else
+            {
+                ChooseGesture();
+            }
+
 
         }
         public void DisplayChoice()
